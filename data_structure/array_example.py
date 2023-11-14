@@ -8,6 +8,7 @@ for i in a:
    print(i, end=" ")
 
 # print(a)
+print(a[5]) #O(1)
 
 # update array element
 a[4] = "😡"

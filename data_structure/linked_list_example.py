@@ -22,7 +22,7 @@ class LinkedList:
             # if linked list is not empty
             # then traverse till the last node and add the new node there
             current = self.head
-            while current.next:
+            while current.next: # O(n)
                   current = current.next
             current.next = new_node
             return
@@ -32,7 +32,7 @@ class LinkedList:
 
             # traverse till the last node
             # and update the data if the target is found
-            while current:
+            while current: # O(n)
                   if current.data == target_data:
                         current.data = new_data
                         return
@@ -42,7 +42,7 @@ class LinkedList:
             current = self.head
 
             # iteration = loop 
-            while current:
+            while current: # O(n)
                   print(current.data, end="->")
                   current = current.next
             print("None")
@@ -50,7 +50,7 @@ class LinkedList:
       def search(self, target):
             current = self.head
 
-            while current:
+            while current: # O(n)
                   if current.data == target:
                         return current
                   current = current.next
